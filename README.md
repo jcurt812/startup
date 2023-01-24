@@ -25,4 +25,4 @@ Every election season, tons of voters go to the polls and submit ballots. Most o
 * Separation of timeline into local, state, and federal levels
 * Real-time polls or debates between candidates online
 
-
+![Wireframe for the Project Specification Assignment](images/Wireframe_for_Startup.png)
