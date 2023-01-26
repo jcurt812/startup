@@ -14,7 +14,8 @@ This assignment gave me a chance to practice merging conflicts in VS code. This 
 ### SSH (w/ key pair) Command: 
 `ssh -i [key pair file] ubuntu@[ip address]`
 
-### My EC2 IP: 3.142.176.217
+### My EC2 IP 
+`3.142.176.217`
 
 
 
