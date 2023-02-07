@@ -38,9 +38,9 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 
 
 ### Notes from Simon HTML project
--Learned about the <menu> element (can be a replacement for an OL or UL)
--Learned about the <sup> tag that allows for superscript
+-Learned about the menu element (can be a replacement for an OL or UL)
+-Learned about the sup element that allows for superscript
 -Learned what "&reg;" does (creates a registered trademark symbol)
--Learned about the <link> tag for inside the <head>
--Learned a general structure that is easy to follow: <header>, <main>, <footer>
--Learned how to implement the table, and what a <th> does
+-Learned about the link tag for inside the head
+-Learned a general structure that is easy to follow: header, main, footer
+-Learned how to implement the table, and what a th does
