@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+}
+
+
+
+nav {
+    background-color: rgb(111, 30, 187);
+}
