@@ -151,3 +151,7 @@ nav {
 .btn-group {
     padding-top: 20px;
 }
+
+.author-name {
+    float: right;
+}
