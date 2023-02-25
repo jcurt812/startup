@@ -39,3 +39,11 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * Learned a little bit more about Bootstrap framework (and how it is implemented into the HTML files)
 * Uses the class="" syntax a lot to define a class for each element so that Bootstrap can apply CSS to it
 * Learned in more detail about flexboxes and how they work
+
+
+
+### Notes from Startup HTML/CSS Project
+* There are websites out there that just have example Bootstrap elements with associated code.
+* I learned when to use the "!important" keyword in CSS and when not to use it
+* I became very comfortable editing style in a stylesheet
+* I learned how to create and embed news (through RSS feeds and an aggregator)
