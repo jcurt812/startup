@@ -16,21 +16,18 @@
         />
     </head>
 
-    <body class="bg-dark text-light">
-        <header class="container-fluid">
+    <body class="bg-light text-dark">
+        <header>
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Concord</a>
+                  <a class="navbar-brand" href="index.html"><img class="nav-image" src="favicon.ico"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="timeline.html">Timeline</a>
+                        <a class="nav-link" href="index.html">Timeline</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="news.html">News</a>
@@ -48,12 +45,55 @@
               </nav>
         </header>
 
-        <main>
-            <h1>About</h1>
+        <main class="main-interior">
+
+            <div class="about-subheading-container">
+                <h2 class="about-subheading">What is Concord?</h2>
+            </div>
+            
+            <div class="inside-main">
+                
+                <div class="about-paragraphs">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p class="bq-0">
+                                Concord is a web application created in order to enhance non-partisan political education. Every election season,
+                                tons of voters go to the polls. Almost all of them submit a ballot based entirely upon party-politics. They either 
+                                vote entirely for candidates running as Republicans, or candidates running as Democrats. 
+                            </p>
+                            <p class="bq-1">
+                                The purpose of Concord is to help voters gain a greater understanding of the backgrounds and beliefs of political
+                                candidates. Many political campaigns and debates have become devoid of substance. Politicians often do their best 
+                                to dodge questions, which leaves voters guessing as to which candidate best aligns with their values.
+                            </p>
+                            <p class="bq-2">
+                                Concord is a platform for political candidates and figures to share their beliefs about the issues that are important
+                                to them. Unlike other social media sites, there will be no comment section, no liking, and no sharing of posts. Voters 
+                                will only be able to come to Concord to read posts from politicians, familiarize themselves with their opinions, and 
+                                form their own opinion of the candidates (without reading the reaction of the masses in the comment section).
+                            </p>
+                        </blockquote>
+                    </figure>
+                </div>
+                    
+                <div>
+                    <form class="contact-us-form" data-bitwarden-watching="1">
+                        <fieldset>
+                            <legend>Contact Us</legend>
+                          <div class="form-group-email">
+                            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group-textarea">
+                            <label for="exampleTextarea" class="form-label mt-4">Message</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary" style="background-color: #8321bf; border-color: #8321bf;">Submit</button>
+                        </fieldset>
+                      </form>  
+                </div> 
+            </div>
         </main>
-
-        <footer>
-
-        </footer>
     </body>
 </html>
