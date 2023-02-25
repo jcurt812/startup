@@ -35,8 +35,8 @@ body {
 }
 
 .nav-image {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 .carousel {
@@ -71,3 +71,83 @@ nav {
     padding-bottom: 20px;
 }
 
+.timeline-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-column {
+    flex: 1;
+    text-align: left;
+    border: lavender 2px;
+    margin-right: 15px;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+.second-column {
+    flex: 1.5;
+    text-align: center;
+    border: lavender 2px;
+    margin-left: 15px;
+    margin-top: 4px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.third-column {
+    flex: 1;
+    text-align: left;
+    padding-top: 5px;
+    margin-top: 8px;
+    margin-right: 4px;
+    margin-left: 15px;
+    border: lavender 2px;
+}
+
+.card {
+    border-color: #8321bf !important;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.card-header {
+    text-align: left;
+}
+
+.card-title {
+    text-align: left;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.btn {
+    border-color: white !important;
+}
+
+.list-group {
+    text-align: left;
+}
+
+.politicians-header {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.messaging-header {
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.poll-header {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.btn-group {
+    padding-top: 20px;
+}
