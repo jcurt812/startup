@@ -47,3 +47,10 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * I learned when to use the "!important" keyword in CSS and when not to use it
 * I became very comfortable editing style in a stylesheet
 * I learned how to create and embed news (through RSS feeds and an aggregator)
+
+
+### Notes from Simon Javascript Project
+* I learned about how to use "onclick" to make things happen on the click of a button
+* I was able to become much more comfortable with Javascript syntax by writing out several functions (within a pair of classes)
+* It was very insightful to see how to add things to LocalStorage and how to retrieve them from LocalStorage using JSON.parse() and JSON.Stringify()
+* It is extremely helpful to have more examples of Javascript Promise syntax and Async/Await syntax
