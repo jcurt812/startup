@@ -54,3 +54,7 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * I was able to become much more comfortable with Javascript syntax by writing out several functions (within a pair of classes)
 * It was very insightful to see how to add things to LocalStorage and how to retrieve them from LocalStorage using JSON.parse() and JSON.Stringify()
 * It is extremely helpful to have more examples of Javascript Promise syntax and Async/Await syntax
+
+
+![image](https://user-images.githubusercontent.com/71749977/223612595-e2671149-2374-4086-9f6a-463883cf47b8.png)
+
