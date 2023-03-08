@@ -58,3 +58,23 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 
 ![image](https://user-images.githubusercontent.com/71749977/223612595-e2671149-2374-4086-9f6a-463883cf47b8.png)
 
+![image](https://user-images.githubusercontent.com/71749977/223612963-be887337-99b6-4624-af43-ffb74702842d.png)
+
+![image](https://user-images.githubusercontent.com/71749977/223613237-7d075933-f329-4b21-aa6e-a43a70798834.png)
+
+![image](https://user-images.githubusercontent.com/71749977/223613521-86a3af1a-7df9-4d08-ab68-57dd2c21e8a7.png)
+
+![image](https://user-images.githubusercontent.com/71749977/223613586-c69fce0a-5cef-4d4a-98a1-8d85602a09d7.png)
+
+![image](https://user-images.githubusercontent.com/71749977/223614678-f0590ad8-c1bc-41b7-bd12-7a04d957aa87.png)
+
+
+
+Dig command: Get the IP address for any domain name
+Domain name registry: A special database that contains domain names
+Root domain: secondary domain followed by top-level domain
+Possible list of TLDs is controlled by ICANN
+The owner of a root domain can create any number of subdomains
+You can get info about a domain name from the domain name registry using "whois" command
+
+
