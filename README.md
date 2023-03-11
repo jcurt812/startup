@@ -39,3 +39,29 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * Learned a little bit more about Bootstrap framework (and how it is implemented into the HTML files)
 * Uses the class="" syntax a lot to define a class for each element so that Bootstrap can apply CSS to it
 * Learned in more detail about flexboxes and how they work
+
+
+
+### Notes from Startup HTML/CSS Project
+* There are websites out there that just have example Bootstrap elements with associated code.
+* I learned when to use the "!important" keyword in CSS and when not to use it
+* I became very comfortable editing style in a stylesheet
+* I learned how to create and embed news (through RSS feeds and an aggregator)
+
+
+### Notes from Simon Javascript Project
+* I learned about how to use "onclick" to make things happen on the click of a button
+* I was able to become much more comfortable with Javascript syntax by writing out several functions (within a pair of classes)
+* It was very insightful to see how to add things to LocalStorage and how to retrieve them from LocalStorage using JSON.parse() and JSON.Stringify()
+* It is extremely helpful to have more examples of Javascript Promise syntax and Async/Await syntax
+
+
+
+Dig command: Get the IP address for any domain name
+Domain name registry: A special database that contains domain names
+Root domain: secondary domain followed by top-level domain
+Possible list of TLDs is controlled by ICANN
+The owner of a root domain can create any number of subdomains
+You can get info about a domain name from the domain name registry using "whois" command
+
+
