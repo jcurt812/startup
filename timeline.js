@@ -38,7 +38,7 @@ function getLocalStorageItem(key) {
 }
 
 function getPosts() {
-    getLocalStorageItem('postArray');
+    return getLocalStorageItem('postArray');
 }
 
 function setPosts(postArr) {
@@ -70,27 +70,54 @@ function createPost() {
     var date = Date.now();
 
     var newPost = new Post(username.value, topic.value, postBody.value, date);
-    console.log(newPost);
+    
+    postArray.push(newPost);
+    setPosts(postArray);
 
-    var newPostElement = createNewHTMLElement("div", newPost.id, "card mb-3");
+    /*var newPostElement = createNewHTMLElement("div", newPost.id, "card mb-3");
     document.getElementById('timeline-section').appendChild(newPostElement);
 
     var newPostHeader = createNewHTMLElementWithContent("div", (newPost.id + "post-author"), "card-header", newPost.username);
-    document.getElementById(newPost.id).appendChild(newPostHeader);
+    document.getElementById(newPost.id).appendChild(newPostHeader);*/
 
     /*var newDeleteButton = createNewHTMLElementWithContent("button", (newPost.id + "delete-button"), "btn btn-danger", "Delete");
     document.getElementById((newPost.id + "post-author")).appendChild(newDeleteButton);*/
 
-    var newPostBodyEl = createNewHTMLElement("div", (newPost.id + "post-body"), "card-body");
+    /*var newPostBodyEl = createNewHTMLElement("div", (newPost.id + "post-body"), "card-body");
     document.getElementById(newPost.id).appendChild(newPostBodyEl);
 
     var newPostParagraph = createNewHTMLElementWithContent("p", (newPost.id + "post-paragraph"), "card-text", newPost.body);
-    document.getElementById((newPost.id) + "post-body").appendChild(newPostParagraph);
+    document.getElementById((newPost.id) + "post-body").appendChild(newPostParagraph);*/
+
+    displayPosts(postArray);
 
     username.value = '';
     topic.value = '';
     postBody.value = '';
 }
+
+
+function displayPosts(array) {
+    document.getElementById('timeline-section').innerHTML = '';
+
+    for (let i = 0; i < array.length; ++i) {
+        var newPostElement = createNewHTMLElement("div", array[i].id, "card mb-3");
+        document.getElementById('timeline-section').appendChild(newPostElement);
+    
+        var newPostHeader = createNewHTMLElementWithContent("div", (array[i].id + "post-author"), "card-header", array[i].username);
+        document.getElementById(array[i].id).appendChild(newPostHeader);
+    
+        /*var newDeleteButton = createNewHTMLElementWithContent("button", (newPost.id + "delete-button"), "btn btn-danger", "Delete");
+        document.getElementById((newPost.id + "post-author")).appendChild(newDeleteButton);*/
+    
+        var newPostBodyEl = createNewHTMLElement("div", (array[i].id + "post-body"), "card-body");
+        document.getElementById(array[i].id).appendChild(newPostBodyEl);
+    
+        var newPostParagraph = createNewHTMLElementWithContent("p", (array[i].id + "post-paragraph"), "card-text", array[i].body);
+        document.getElementById((array[i].id) + "post-body").appendChild(newPostParagraph);
+    }
+}
+
 
 /*function deletePost() {
 
@@ -99,6 +126,7 @@ function createPost() {
 window.onload = function() {
     if (localStorage.getItem('postArray') != null) {
         postArray = getPosts();
+        displayPosts(postArray);
     }
     else {
         console.log("There are no new posts!");

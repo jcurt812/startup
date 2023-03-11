@@ -175,3 +175,8 @@ nav {
     display: flex;
     flex-direction: row;
 }
+
+#timeline-section {
+    display: flex;
+    flex-direction: column-reverse;
+}
