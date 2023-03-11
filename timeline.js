@@ -1,4 +1,12 @@
+var postArray = [];
+
 class Post {
+    id;
+    username;
+    topic;
+    body;
+    timestamp;
+
     constructor(username, topic, body, timestamp) {
         this.id = crypto.randomUUID();
         this.username = username;
@@ -8,13 +16,17 @@ class Post {
     }
 }
 
-class Timeline {
+/*class Timeline {
+    topic;
+    postArray;
+    govLevel;
+
     constructor(topic, postArray, govLevel) {
         this.topic = topic;
         this.postArray = postArray;
         this.govLevel = govLevel;
     }
-}
+}*/
 
 function getLocalStorageItem(key) {
     const item = localStorage.getItem(key);
@@ -27,6 +39,10 @@ function getLocalStorageItem(key) {
 
 function getPosts() {
     getLocalStorageItem('postArray');
+}
+
+function setPosts(postArr) {
+    localStorage.setItem('postArray', JSON.stringify(postArr));
 }
 
 
@@ -76,6 +92,15 @@ function createPost() {
     postBody.value = '';
 }
 
-function deletePost() {
+/*function deletePost() {
 
+}*/
+
+window.onload = function() {
+    if (localStorage.getItem('postArray') != null) {
+        postArray = getPosts();
+    }
+    else {
+        console.log("There are no new posts!");
+    }
 }
