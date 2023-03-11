@@ -155,3 +155,23 @@ nav {
 .author-name {
     float: right;
 }
+
+#post-button {
+    float: right;
+    margin-top: 8px;
+}
+
+#poster-username {
+    margin-right: 4px;
+    margin-bottom: 8px;
+}
+
+#post-topic {
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+
+#new-post-1 {
+    display: flex;
+    flex-direction: row;
+}

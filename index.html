@@ -52,53 +52,44 @@
                   <h4 class="messaging-header">Messaging</h4>
 
                   <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 1
                       <span class="badge bg-dark rounded-pill">14</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 2
                       <span class="badge bg-dark rounded-pill">2</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 3
                       <span class="badge bg-dark rounded-pill">7</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 4
                       <span class="badge bg-dark rounded-pill">1</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 5
                       <span class="badge bg-dark rounded-pill">8</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 6
                       <span class="badge bg-dark rounded-pill">1</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 7
                       <span class="badge bg-dark rounded-pill">55</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 8
                       <span class="badge bg-dark rounded-pill">2</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 9
                       <span class="badge bg-dark rounded-pill">11</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                       Example Group 10
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Example Group 11
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Example Group 12
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Example Group 13
                     </li>
                   </ul>
                 </div>
@@ -114,42 +105,29 @@
                 
             </div>
 
-            <div class="second-column">
+
+
+
+
+            <div class="second-column" id="timeline-section">
               <h3>Timeline</h3>
 
               <div class="card mb-3">
-                <div class="card-header">Ron DeSantis</div>
+                <div class="card-header">New Post</div>
                 <div class="card-body">
-                  <p class="card-text">This is an example post from Ron DeSantis. He would respond to a question or a news article. 
-                    This would help him establish the platform that he is running on, and allow voters to better understand his beliefs.
-                  </p>
+                  <div id="new-post-1">
+                    <input type="text" class="form-control" id="poster-username" placeholder="Username of Author" aria-label="Username of Poster" aria-describedby="button-addon2">
+                    <input type="text" class="form-control" id="post-topic" placeholder="Post Topic" aria-label="Username of Poster" aria-describedby="button-addon2">
+                  </div>
+
+                  <div id="new-post-2">
+                    <textarea class="form-control" id="newpostbody" rows="3" placeholder="Write a new post here..." style="height: 100px;"></textarea>
+                    <button type="submit" class="btn btn-bd-primary" id="post-button" onclick="createPost()">Submit</button>
+                  </div>
                 </div>
               </div>
 
-              <div class="card mb-3">
-                <div class="card-header">Kamala Harris</div>
-                <div class="card-body">
-                  <p class="card-text">This is an example post from Kamala Harris. She would respond to a question or a news article. 
-                    This would help her establish the platform that she is running on, and allow voters to better understand her beliefs.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card mb-3">
-                <div class="card-header">Donald Trump</div>
-                <div class="card-body">
-                  <p class="card-text">This is an example post from Donald Trump. He would respond to a question or a news article. 
-                    This would help him establish the platform that he is running on, and allow voters to better understand his beliefs.</p>
-                </div>
-              </div>
-
-              <div class="card mb-3">
-                <div class="card-header">Barack Obama</div>
-                <div class="card-body">
-                  <p class="card-text">This is an example post from Barack Obama. He would respond to a question or a news article. 
-                    This would help him establish the platform that he is running on, and allow voters to better understand his beliefs.</p>
-                </div>
-              </div>
+              
             </div>
 
             <div class="third-column">
@@ -188,5 +166,6 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="timeline.js"></script>
     </body>
 </html>
