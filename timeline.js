@@ -107,21 +107,40 @@ function displayPosts(array) {
         var newPostHeader = createNewHTMLElementWithContent("div", (array[i].id + "post-author"), "card-header", array[i].username);
         document.getElementById(array[i].id).appendChild(newPostHeader);
     
-        /*var newDeleteButton = createNewHTMLElementWithContent("button", (newPost.id + "delete-button"), "btn btn-danger", "Delete");
-        document.getElementById((newPost.id + "post-author")).appendChild(newDeleteButton);*/
-    
+        var newDeleteButton = createNewHTMLElementWithContent("button", (array[i].id + "delete-button"), "btn btn-danger", "Delete");
+        newDeleteButton.style="float: right";
+        document.getElementById((array[i].id + "post-author")).appendChild(newDeleteButton);
+        document.getElementById(newDeleteButton.id).onclick = function() {
+            deletePost(i);
+        }
+        
+        
         var newPostBodyEl = createNewHTMLElement("div", (array[i].id + "post-body"), "card-body");
         document.getElementById(array[i].id).appendChild(newPostBodyEl);
     
         var newPostParagraph = createNewHTMLElementWithContent("p", (array[i].id + "post-paragraph"), "card-text", array[i].body);
         document.getElementById((array[i].id) + "post-body").appendChild(newPostParagraph);
+
     }
 }
 
 
-/*function deletePost() {
+function deletePost(index) {
+    if (index === 0) {
+        postArray = postArray.slice(1);
+    }
+    else if (index === postArray.length - 1) {
+        postArray = postArray.slice(0, -1);
+    }
+    else {
+        const firstHalf = postArray.slice(0,index);
+        const secondHalf = postArray.slice(index + 1);
+        postArray = firstHalf.concat(secondHalf);
+    }
 
-}*/
+    setPosts(postArray);
+    displayPosts(postArray);
+}
 
 window.onload = function() {
     if (localStorage.getItem('postArray') != null) {
