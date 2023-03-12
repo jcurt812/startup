@@ -56,12 +56,17 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * It is extremely helpful to have more examples of Javascript Promise syntax and Async/Await syntax
 
 
-
-Dig command: Get the IP address for any domain name
-Domain name registry: A special database that contains domain names
-Root domain: secondary domain followed by top-level domain
-Possible list of TLDs is controlled by ICANN
-The owner of a root domain can create any number of subdomains
-You can get info about a domain name from the domain name registry using "whois" command
+### Notes from Startup Javascript Project
+* Use the "window.onload = function() {}" syntax to create a function that runs immediately on the load of the page.
+* "document.getElementById(newDeleteButton.id).onclick = function() {}" to add an onclick function via Javascript
+* Use the Javascript "Slice" function for removing an item from an array. array.slice(i) where the return value is the array from index i to the end
+* Use the "document.createElement()" function for adding a display of something. Build helper functions around it to allow you to include things like ID, class, etc.
+* Determine what classes you are going to need first. I was lost on working on this project until I determined to make a Javascript class for "Post" objects
+* Classes can be defined in a format that is pretty standard in comparison to other programming languages. List attributes at the top, then a constructor, then other functions
+* localStorage.getItem('Name')
+* localStorage.setItem('Name", JSON.Stringify(item))
+* The Javascript array has a built in "Push" method
+* "===" for comparison in an "if" statement
+* Go for basic functionality first: Create, Read, Update, Delete
 
 
