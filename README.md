@@ -78,9 +78,9 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
         
 *The above syntax is used for service calls. This service call makes a request to Picsum to get a random image. The ${random} variable was generated separately just before this code.
 *I was able to become much more comfortable with the syntax for calling a service function:
-    *    try {
-      const response = await fetch('/api/score', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(newScore),
-      });
+       *try {
+         const response = await fetch('/api/score', {
+           method: 'POST',
+           headers: { 'content-type': 'application/json' },
+           body: JSON.stringify(newScore),
+         });
