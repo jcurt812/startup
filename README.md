@@ -69,4 +69,18 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * "===" for comparison in an "if" statement
 * Go for basic functionality first: Create, Read, Update, Delete
 
+### Notes from Simon Service Project
+* Use "pm2 restart {service name}" to restart a service; in this case, "pm2 restart simon" on the Caddy server
 
+    * fetch(`https://picsum.photos/v2/list?page=${random}&limit=1`)
+        .then((response) => response.json())
+        .then((data) => {
+        
+*The above syntax is used for service calls. This service call makes a request to Picsum to get a random image. The ${random} variable was generated separately just before this code.
+*I was able to become much more comfortable with the syntax for calling a service function:
+    *    try {
+      const response = await fetch('/api/score', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(newScore),
+      });
