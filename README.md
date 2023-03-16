@@ -91,7 +91,7 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * When you are setting an environment variable for your local dev environment in Windows, you need to add it by going: Start -> Edit your System Environment Variables
 * When you edit these environment variables, you will need to restart the program accessing these variables (Close VS code and restart it)
 * For linux, just edit the "/etc/environment" file
-* String for assembling MongoDB URL:      const url = `mongodb+srv://${userName}:${password}@${hostname}`;
+* String for assembling MongoDB URL:      const url = ``mongodb+srv://${userName}:${password}@${hostname}``;
 * const client = new MongoClient(url);
 * To make and refer to a collection programatically: const collection = client.db('<db_name>').collection('<collection_name>');
 * The "insertOne()" function can be used to enter a new item in MongoDB database collection. It can take a parameter of the object you want to add
@@ -99,4 +99,4 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * Use the find function to search through a collection for a value: const value = collection.find();
 * On this find function: You can include a "query" or "options" parameter
 * Query: `const query = { property_type: 'Condo', beds: { $lt: 2 } };` is code that will search for "Condo" property type with less than 2 beds (in BNB example)
-* Options: const options = { sort: { price: -1 }, limit: 10, };   --- This puts results in descending order by price, and limits to the top 10 results
+* Options: `const options = { sort: { price: -1 }, limit: 10, };`   --- This puts results in descending order by price, and limits to the top 10 results
