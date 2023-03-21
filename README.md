@@ -100,3 +100,11 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * On this find function: You can include a "query" or "options" parameter
 * Query: `const query = { property_type: 'Condo', beds: { $lt: 2 } };` is code that will search for "Condo" property type with less than 2 beds (in BNB example)
 * Options: `const options = { sort: { price: -1 }, limit: 10, };`   --- This puts results in descending order by price, and limits to the top 10 results
+
+
+### Notes from Simon Login Project
+* /auth/create and /auth/login endpoints for easy separation of responsibilities - they are two separate constructs
+* `authenticated = user?.authenticated;` -- This is used to set the "authenticated" value according to whether or not this user is logged in. A cookie will determine this value
+* `if (authenticated) {}` -- Use this construct to make the web application only do certain things once the user is authenticated.
+* Make a get user function that uses the same API call as your already existing "getUser" function. This can be used to pull based off of email and then check password
+* Make a separate "/" index page that only handles the authentication. On logout, just set window.location.href = "/" and then when login is sucessful, choose the HTML page location to switch to
