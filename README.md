@@ -108,3 +108,15 @@ Every election season, tons of voters go to the polls. Most of them submit a bal
 * `if (authenticated) {}` -- Use this construct to make the web application only do certain things once the user is authenticated.
 * Make a get user function that uses the same API call as your already existing "getUser" function. This can be used to pull based off of email and then check password
 * Make a separate "/" index page that only handles the authentication. On logout, just set window.location.href = "/" and then when login is sucessful, choose the HTML page location to switch to
+
+
+### Notes from Simon Web Sockets
+* Everything done within a Javascript class, which is then exported using `module.exports = { PeerProxy };` at the bottom of the file
+* Once the 'ws' package was required, it wasn't hard to add a webSocket object: `const wss = new WebSocketServer({ noServer: true });`
+* The original connection is made over regular HTTP; then, the connection must be specifically upgraded to use WebSocket protocol (made in 2011)
+* It is important to note: WebSocket conncections are still one to one; if you want multiple devices to be included, your server acts as intermediary and connects with each one
+* The "send()" function is used to send a message to a peer: `socket.send('I am listening');`
+* When a connection is made, there is a "OnConnection" callback function that runs: `wss.on('connection', (ws) => { ... }`
+* Include variables in send(): `ws.send(`I heard you say "${msg}"`);`
+* ws.on('message', function .....) = A callback function that runs every time a message is received
+* `let connections = [];` = allows you to keep track of all the different connections made to this webSocket Server
